@@ -18,6 +18,7 @@ func Start(in io.Reader, out io.Writer) {
 		fmt.Printf(PROMPT)
 		scanned := scanner.Scan()
 		if !scanned {
+			fmt.Printf("Goodbye!\n")
 			return
 		}
 
